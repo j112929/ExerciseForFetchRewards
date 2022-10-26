@@ -34,6 +34,7 @@ public class LocalCacheRepository {
         for (TransactionRoute transactionRoute: cache) {
             if(transactionRoute.getId() == route.getId()){
                 transactionRoute.setPoints(route.getPoints());
+                return;
             }
         }
     }
